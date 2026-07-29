@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" fill="none">
+  <!-- Code Symbol </> -->
+  <g stroke="#0b192e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 26 21 L 10 35 L 26 49" />
+    <path d="M 42 15 L 30 55" />
+    <path d="M 46 21 L 62 35 L 46 49" />
+  </g>
+  <!-- CodeGenZ Text -->
+  <text x="78" y="48" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="38" fill="#0b192e" letter-spacing="-1">CodeGenZ</text>
+</svg>

@@ -1,0 +1,75 @@
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="py-16 lg:py-24 bg-slate-50/60">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="reveal section-badge inline-block text-xs font-semibold text-indigo-600 bg-indigo-50 px-4 py-1.5 rounded-full uppercase mb-4">Testimoni</span>
+        <h2 class="reveal reveal-delay-1 font-heading font-bold text-3xl sm:text-4xl text-slate-900 tracking-tight">Apa kata mereka?</h2>
+        <p class="reveal reveal-delay-2 mt-4 text-slate-500 leading-relaxed">Kepuasan klien adalah prioritas utama kami.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Testimonial 1 -->
+        <div class="reveal reveal-delay-1 testimonial-card bg-white rounded-2xl p-7 border border-slate-100">
+          <!-- Stars -->
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6">"CodeGenz sangat membantu saya menyelesaikan tugas akhir tepat waktu. Kode bersih, dokumentasi lengkap, dan support-nya luar biasa responsif."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-400 to-blue-500 flex items-center justify-center text-white text-sm font-bold">A</div>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Andi Pratama</p>
+              <p class="text-xs text-slate-400">Mahasiswa Teknik Informatika</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="reveal reveal-delay-2 testimonial-card bg-white rounded-2xl p-7 border border-slate-100">
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6">"Website toko online kami jadi jauh lebih profesional berkat CodeGenz. Harga sangat terjangkau untuk kualitas yang didapat. Recommended!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white text-sm font-bold">S</div>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Bu Sari Dewi</p>
+              <p class="text-xs text-slate-400">Pemilik UMKM Fashion</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="reveal reveal-delay-3 testimonial-card bg-white rounded-2xl p-7 border border-slate-100">
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6">"Respon cepat, hasil memuaskan, dan harga bersahabat. Sudah 3x order di CodeGenz dan selalu puas. Pasti bakal order lagi!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-violet-400 to-purple-500 flex items-center justify-center text-white text-sm font-bold">R</div>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Rizky Hidayat</p>
+              <p class="text-xs text-slate-400">Freelance Developer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Transition: Testimoni → CTA -->
+  <div class="h-16 lg:h-20 bg-gradient-to-b from-slate-50/60 to-indigo-900"></div>
