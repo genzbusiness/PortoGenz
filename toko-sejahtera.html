@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Sejahtera — Demo E-Commerce UMKM by CodeGenz</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-700 antialiased pb-20">
+
+  <!-- ===== DEMO BAR ===== -->
+  <div class="bg-indigo-900 text-white text-xs sm:text-sm py-2.5 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="bg-indigo-600 text-white text-[11px] font-bold px-2 py-0.5 rounded-full uppercase">Demo Project</span>
+        <span class="font-medium hidden sm:inline text-indigo-200">Toko Sejahtera — Platform E-Commerce UMKM oleh CodeGenz</span>
+      </div>
+      <a href="index.html#portfolio" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-lg text-xs font-semibold transition-colors">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+        Kembali ke CodeGenz
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== STORE HEADER ===== -->
+  <header class="bg-white border-b border-slate-200 sticky top-10 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-4">
+
+        <!-- Store Logo -->
+        <a href="#" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-sm">
+            TS
+          </div>
+          <div>
+            <span class="font-bold text-lg sm:text-xl text-slate-900 leading-tight block">Toko Sejahtera</span>
+            <span class="text-[11px] text-slate-400 font-medium">Pasar Digital UMKM</span>
+          </div>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="hidden md:flex items-center flex-1 max-w-md relative">
+          <input type="text" placeholder="Cari produk UMKM, sepatu, batik..."
+                 class="w-full bg-slate-100 border border-slate-200 rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-indigo-500 focus:bg-white transition-all">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+        </div>
+
+        <!-- Header Actions -->
+        <div class="flex items-center gap-3">
+          <button id="cart-btn" class="relative p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span id="cart-count" class="absolute -top-1 -right-1 bg-indigo-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">2</span>
+          </button>
+          <button class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-xl transition-colors shadow-sm">
+            <i data-lucide="user" class="w-4 h-4"></i>
+            Masuk / Daftar
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO BANNER ===== -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-indigo-900 via-indigo-800 to-blue-900 text-white p-8 sm:p-12 lg:p-16 shadow-xl">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+      <div class="relative z-10 max-w-xl">
+        <span class="inline-block px-3.5 py-1 bg-white/15 backdrop-blur-md rounded-full text-xs font-semibold text-indigo-200 mb-4">
+          Promo UMKM Nusantara 🇲🇨
+        </span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+          Produk Lokal Berkualitas Premium
+        </h1>
+        <p class="mt-4 text-indigo-100 text-sm sm:text-base leading-relaxed">
+          Dukung usaha mikro Indonesia. Nikmati cashback hingga 30% dan gratis ongkir ke seluruh pelosok tanah air.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#katalog" class="px-6 py-3 bg-white text-indigo-950 font-bold text-sm rounded-xl hover:bg-indigo-50 transition-colors shadow-md">
+            Belanja Sekarang
+          </a>
+          <a href="https://wa.me/6285183044050?text=Halo%20CodeGenz,%20saya%20tertarik%20dengan%20sistem%20E-Commerce%20Toko%20Sejahtera" target="_blank" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm rounded-xl transition-colors backdrop-blur-sm">
+            Pesan Sistem Seperti Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES & KATALOG ===== -->
+  <section id="katalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+    <!-- Category Tabs -->
+    <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-8 overflow-x-auto gap-4">
+      <div class="flex items-center gap-2">
+        <button class="px-4 py-2 bg-indigo-600 text-white rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap shadow-sm">Semua Produk</button>
+        <button class="px-4 py-2 bg-white hover:bg-slate-100 text-slate-600 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors border border-slate-200">Fashion Lokal</button>
+        <button class="px-4 py-2 bg-white hover:bg-slate-100 text-slate-600 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors border border-slate-200">Kuliner & Snack</button>
+        <button class="px-4 py-2 bg-white hover:bg-slate-100 text-slate-600 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors border border-slate-200">Kerajinan Tangan</button>
+      </div>
+      <span class="text-xs text-slate-400 font-medium shrink-0">Menampilkan 6 Produk</span>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Product 1 -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+        <div class="relative h-56 bg-slate-100 overflow-hidden">
+          <img src="toko_sejahtera.jpg" alt="Batik Solo Premium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <span class="absolute top-3 left-3 bg-red-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-md">DISKON 20%</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Fashion</span>
+            <h3 class="font-bold text-slate-800 text-base mt-1">Kemeja Batik Solo Modern</h3>
+            <p class="text-xs text-slate-400 mt-1">Bahan katun halus primisima, dingin dan nyaman dipakai.</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-slate-400 line-through">Rp 250.000</span>
+              <p class="font-extrabold text-indigo-700 text-lg">Rp 199.000</p>
+            </div>
+            <button onclick="addCart('Kemeja Batik Solo Modern', 199000)" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+              <i data-lucide="plus" class="w-4 h-4"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+        <div class="relative h-56 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center p-6 text-white text-center">
+          <div>
+            <i data-lucide="coffee" class="w-16 h-16 mx-auto mb-2 opacity-80"></i>
+            <span class="font-bold text-xl block">Kopi Gayo Single Origin</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md">BESTSELLER</span>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Kuliner</span>
+            <h3 class="font-bold text-slate-800 text-base mt-1">Kopi Arabika Gayo 250g</h3>
+            <p class="text-xs text-slate-400 mt-1">Biji kopi pilihan kualitas ekspor dengan aroma herbal khas Aceh.</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <p class="font-extrabold text-indigo-700 text-lg">Rp 85.000</p>
+            </div>
+            <button onclick="addCart('Kopi Arabika Gayo 250g', 85000)" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+              <i data-lucide="plus" class="w-4 h-4"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+        <div class="relative h-56 bg-gradient-to-br from-teal-500 to-emerald-700 flex items-center justify-center p-6 text-white text-center">
+          <div>
+            <i data-lucide="sparkles" class="w-16 h-16 mx-auto mb-2 opacity-80"></i>
+            <span class="font-bold text-xl block">Tas Rajut Handmade</span>
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Kerajinan</span>
+            <h3 class="font-bold text-slate-800 text-base mt-1">Tas Rajut Ethnic Premium</h3>
+            <p class="text-sm text-slate-400 mt-1">Dibuat langsung oleh pengrajin lokal Jogja dengan benang katun awet.</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <p class="font-extrabold text-indigo-700 text-lg">Rp 145.000</p>
+            </div>
+            <button onclick="addCart('Tas Rajut Ethnic Premium', 145000)" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+              <i data-lucide="plus" class="w-4 h-4"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+        <div class="relative h-56 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center p-6 text-white text-center">
+          <div>
+            <i data-lucide="footprints" class="w-16 h-16 mx-auto mb-2 opacity-80"></i>
+            <span class="font-bold text-xl block">Sepatu Sneaker Lokal</span>
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Fashion</span>
+            <h3 class="font-bold text-slate-800 text-base mt-1">Sneaker Canvas Vulcanized</h3>
+            <p class="text-xs text-slate-400 mt-1">Desain kasual minimalis, insole empuk tahan lama buatan Bandung.</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <p class="font-extrabold text-indigo-700 text-lg">Rp 220.000</p>
+            </div>
+            <button onclick="addCart('Sneaker Canvas Vulcanized', 220000)" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+              <i data-lucide="plus" class="w-4 h-4"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+        <div class="relative h-56 bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center p-6 text-white text-center">
+          <div>
+            <i data-lucide="utensils" class="w-16 h-16 mx-auto mb-2 opacity-80"></i>
+            <span class="font-bold text-xl block">Sambal Cumi Asin</span>
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Kuliner</span>
+            <h3 class="font-bold text-slate-800 text-base mt-1">Sambal Cumi Asin Pedas 200g</h3>
+            <p class="text-xs text-slate-400 mt-1">Resep rumahan lezat, tanpa bahan pengawet buatan, isi cumi melimpah.</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <p class="font-extrabold text-indigo-700 text-lg">Rp 45.000</p>
+            </div>
+            <button onclick="addCart('Sambal Cumi Asin Pedas 200g', 45000)" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+              <i data-lucide="plus" class="w-4 h-4"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+        <div class="relative h-56 bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center p-6 text-white text-center">
+          <div>
+            <i data-lucide="sun" class="w-16 h-16 mx-auto mb-2 opacity-80"></i>
+            <span class="font-bold text-xl block">Minyak Kelapa Murni</span>
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Kesehatan</span>
+            <h3 class="font-bold text-slate-800 text-base mt-1">Virgin Coconut Oil (VCO) 500ml</h3>
+            <p class="text-xs text-slate-400 mt-1">Minyak kelapa murni cold-pressed organik kaya manfaat kesehatan.</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <p class="font-extrabold text-indigo-700 text-lg">Rp 75.000</p>
+            </div>
+            <button onclick="addCart('Virgin Coconut Oil (VCO) 500ml', 75000)" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+              <i data-lucide="plus" class="w-4 h-4"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CODEGENZ CALLOUT FOOTER BANNER ===== -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+    <div class="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+      <div>
+        <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">Tertarik Memiliki Website E-Commerce Seperti Ini?</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">CodeGenz Siap Membangunkan Website Toko Online Anda</h2>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">Dilengkapi payment gateway, manajemen stok, keranjang belanja, invoice otomatis, dan panel admin profesional.</p>
+      </div>
+      <a href="https://wa.me/6285183044050?text=Halo%20CodeGenz,%20saya%20tertarik%20membuat%20website%20e-commerce%20seperti%20Toko%20Sejahtera" target="_blank"
+         class="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm rounded-2xl whitespace-nowrap transition-colors shadow-lg shadow-indigo-600/30 flex items-center gap-2">
+        <i data-lucide="message-square" class="w-4 h-4"></i>
+        Konsultasi Pembuatan Website
+      </a>
+    </div>
+  </section>
+
+  <!-- Modal Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white px-5 py-3 rounded-2xl text-sm font-semibold shadow-2xl flex items-center gap-3 transition-all duration-300 opacity-0 translate-y-6 pointer-events-none z-50">
+    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+    <span id="toast-msg">Produk ditambahkan ke keranjang</span>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    let count = 2;
+    function addCart(name, price) {
+      count++;
+      document.getElementById('cart-count').textContent = count;
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-msg').textContent = `"${name}" berhasil ditambahkan!`;
+      toast.classList.remove('opacity-0', 'translate-y-6', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-6', 'pointer-events-none');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
