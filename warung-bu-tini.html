@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Bu Tini — Demo Landing Page Kuliner UMKM by CodeGenz</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body class="font-sans bg-amber-50/50 text-slate-700 antialiased pb-20">
+
+  <!-- DEMO BAR -->
+  <div class="bg-amber-950 text-white text-xs sm:text-sm py-2.5 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="bg-amber-600 text-white text-[11px] font-bold px-2 py-0.5 rounded-full uppercase">Demo Project</span>
+        <span class="font-medium hidden sm:inline text-amber-200">Warung Bu Tini — Landing Page & Menu Digital UMKM oleh CodeGenz</span>
+      </div>
+      <a href="index.html#portfolio" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-lg text-xs font-semibold transition-colors">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+        Kembali ke CodeGenz
+      </a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-amber-200/80 sticky top-10 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white font-bold shadow-sm">
+            <i data-lucide="utensils" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="font-bold text-lg text-slate-900 leading-tight block">Warung Bu Tini</span>
+            <span class="text-[11px] text-amber-700 font-medium">Kuliner Ayam Penyet & Masakan Jawa</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/6285183044050?text=Halo%20CodeGenz,%20saya%20tertarik%20pesan%20landing%20page%20kuliner%20seperti%20Warung%20Bu%20Tini" target="_blank"
+           class="px-4 py-2 bg-amber-600 text-white font-bold text-xs sm:text-sm rounded-xl hover:bg-amber-700 transition-colors shadow-sm">
+          Pesan Landing Page Kuliner
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <div class="relative rounded-3xl overflow-hidden mb-8">
+      <img src="warung_bu_tini.jpg" alt="Warung Bu Tini Hero" class="w-full h-80 sm:h-96 object-cover rounded-3xl shadow-lg">
+      <div class="absolute inset-0 bg-gradient-to-t from-amber-950/90 via-slate-900/40 to-transparent flex items-end p-8 text-white">
+        <div>
+          <span class="bg-amber-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase mb-2 inline-block">Resep Asli Sejak 1998</span>
+          <h1 class="text-2xl sm:text-4xl font-extrabold">Ayam Penyet Sambal Korek Spesial</h1>
+          <p class="text-amber-100 text-sm mt-1 max-w-xl">Pedas gurih nagih! Siap kirim via GoFood, GrabFood, dan WhatsApp Order langsung.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU CARDS -->
+    <h2 class="font-extrabold text-2xl text-slate-800 mb-6">Menu Favorit Pelanggan</h2>
+    <div class="grid sm:grid-cols-3 gap-6 mb-12">
+      <div class="bg-white p-6 rounded-2xl border border-amber-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-amber-600 font-bold uppercase">Spesial Ayam</span>
+          <h3 class="font-bold text-slate-800 text-lg mt-1">Paket Ayam Penyet Sambal Korek</h3>
+          <p class="text-xs text-slate-500 mt-1">Nasi uduk + Ayam Goreng + Sambal Korek + Tahu Tempe + Lalapan.</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-amber-100 flex items-center justify-between">
+          <span class="font-extrabold text-amber-700 text-lg">Rp 28.000</span>
+          <a href="https://wa.me/6285183044050?text=Halo%20Bu%20Tini,%20saya%20mau%20pesan%20Paket%20Ayam%20Penyet" target="_blank"
+             class="px-3.5 py-2 bg-green-500 hover:bg-green-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+            Order WA
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-amber-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-amber-600 font-bold uppercase">Spesial Bebek</span>
+          <h3 class="font-bold text-slate-800 text-lg mt-1">Bebek Goreng Madura Empuk</h3>
+          <p class="text-xs text-slate-500 mt-1">Bebek bumbu hitam rempah gurih meresap sampai ke tulang.</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-amber-100 flex items-center justify-between">
+          <span class="font-extrabold text-amber-700 text-lg">Rp 38.000</span>
+          <a href="https://wa.me/6285183044050?text=Halo%20Bu%20Tini,%20saya%20mau%20pesan%20Bebek%20Goreng" target="_blank"
+             class="px-3.5 py-2 bg-green-500 hover:bg-green-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+            Order WA
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-amber-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-amber-600 font-bold uppercase">Minuman</span>
+          <h3 class="font-bold text-slate-800 text-lg mt-1">Es Jeruk Peras Murni</h3>
+          <p class="text-xs text-slate-500 mt-1">Jeruk segar peras asli tanpa bahan pemanis buatan.</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-amber-100 flex items-center justify-between">
+          <span class="font-extrabold text-amber-700 text-lg">Rp 8.000</span>
+          <a href="https://wa.me/6285183044050?text=Halo%20Bu%20Tini,%20saya%20mau%20pesan%20Es%20Jeruk" target="_blank"
+             class="px-3.5 py-2 bg-green-500 hover:bg-green-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5">
+            Order WA
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CODEGENZ CTA -->
+    <div class="bg-gradient-to-r from-slate-900 to-amber-950 rounded-3xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+      <div>
+        <span class="text-amber-400 text-xs font-bold uppercase">Ingin Usaha Kuliner / UMKM Anda Memiliki Website?</span>
+        <h2 class="text-2xl font-extrabold mt-1">Pesan Website Menu Digital & WhatsApp Order di CodeGenz</h2>
+        <p class="text-slate-400 text-sm mt-1">Solusi landing page siap pakai, cepat, dan murah untuk tingkatkan omset kuliner.</p>
+      </div>
+      <a href="https://wa.me/6285183044050?text=Halo%20CodeGenz,%20saya%20ingin%20buat%20website%20menu%20kuliner%20UMKM" target="_blank"
+         class="px-6 py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm rounded-2xl whitespace-nowrap transition-colors">
+        Konsultasi via WhatsApp
+      </a>
+    </div>
+  </main>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
